@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
+.section {
+  font-family: "Quicksand", sans-serif;
+  color: #333333;
+  font-size: 15px;
+  line-height: 1.80857;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 70px 0;
+}
+h2,
+h3,
+h4 {
+  font-family: "Quicksand", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.section.lb {
+  background-color: #f2f3f5;
+}
+
+.section-title {
+  display: block;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.section-title p {
+  color: #656262;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 33px;
+  margin: 0;
+}
+
+.section-title h3 {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 62px;
+  margin: 0 0 25px;
+  padding: 0;
+  text-transform: none;
+}
+
+.post-media {
+  position: relative;
+}
+
+.post-media img {
+  width: 100%;
+}
+.message-box {
+  padding: 20px 0px;
+}
+
+.message-box a {
+  position: relative;
+  padding: 13px 40px;
+  font-size: 18px;
+  display: inline-block;
+}
+.message-box a,
+.message-box a.hover-btn-new::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.message-box a.hover-btn-new::before,
+.message-box a.hover-btn-new::after {
+  background: #538234;
+  background: radial-gradient(circle, #82b260 32%, #538234 100%);
+  content: "";
+  position: absolute;
+  z-index: 1;
+}
+
+.message-box a.hover-btn-new:hover span {
+  color: #ffffff;
+}
+.message-box a.hover-btn-new::before {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.message-box a.hover-btn-new::after {
+  background: #3b3838 !important;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.message-box a.hover-btn-new span {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.message-box a.hover-btn-new:hover:after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+.message-box h4 {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 0 5px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  color: #999;
+}
+
+.message-box h2 {
+  font-size: 38px;
+  font-weight: 400;
+  padding: 0 0 10px;
+  margin: 0;
+  line-height: 62px;
+  margin-top: 0;
+  text-transform: none;
+}
+
+.message-box p {
+  margin-bottom: 20px;
+}
+
+.message-box .lead {
+  padding-top: 10px;
+  font-size: 19px;
+  font-style: italic;
+  color: #999;
+  padding-bottom: 0;
+}
+.align-items-center {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1400px) {
+  .mw-1140 {
+    max-width: 1140px;
+  }
+}

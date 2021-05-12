@@ -1,0 +1,38 @@
+#menu {
+  padding: 15px;
+  transition: all 0.8s;
+}
+#menu.custom-navbar {
+  /* background-color: #fff; */
+  border-color: rgba(231, 231, 231, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+#menu a.navbar-brand {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #3b3838;
+  text-transform: uppercase;
+}
+#menu.custom-navbar .navbar-nav > li > a {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  color: #3b3838;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 8px 2px;
+  border-radius: 0;
+  margin: 9px 20px 0 20px;
+}
+.lineAnimation {
+  display: block;
+  left: 0;
+  margin-top: 4px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #538234 0%, #82b260 100%);
+  transition: width 0.2s;
+}
+#menu.custom-navbar .navbar-nav > li > a:hover .lineAnimation {
+  width: 100%;
+}

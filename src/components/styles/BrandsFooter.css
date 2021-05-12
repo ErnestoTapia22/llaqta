@@ -1,0 +1,33 @@
+.dbcolor {
+  background: linear-gradient(to right, #538234 0%, #82b260 100%);
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+.parallax.parallax-off {
+  background-attachment: fixed !important;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  background-position: center center;
+  vertical-align: sub;
+  width: 100%;
+  z-index: 2;
+}
+
+.logos img {
+  margin: auto;
+  display: block;
+  text-align: center;
+  width: 100%;
+  opacity: 0.3;
+}
+
+.logos img:hover {
+  opacity: 1;
+}
