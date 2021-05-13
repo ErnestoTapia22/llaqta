@@ -29,10 +29,10 @@ const Navbar = (props) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <Link className="nav-link" to="/">
                 Inicio
                 <div className="lineAnimation" />
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#about" className="nav-link">
@@ -43,24 +43,25 @@ const Navbar = (props) => {
             <li>
               <Link className="nav-link" to="/services">
                 Servicios
+                <div className="lineAnimation" />
               </Link>
-              <div className="lineAnimation" />
+
               {/* <a href="#services" className="nav-link">
                 Servicios
                 <div className="lineAnimation" />
               </a> */}
             </li>
             <li>
-              <a href="#portfolio" className="nav-link">
+              <Link className="nav-link" to="/gallery">
                 Galeria
                 <div className="lineAnimation" />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="nav-link">
+              <Link className="nav-link" to="/contact">
                 Contacto
                 <div className="lineAnimation" />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

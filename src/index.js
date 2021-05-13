@@ -6,10 +6,13 @@ import "bootstrap/dist/js/bootstrap.js";
 import "./index.css";
 import App from "./components/App";
 import reportWebVitals from "./reportWebVitals";
+import SimpleReactLightbox from "simple-react-lightbox";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SimpleReactLightbox>
+      <App />
+    </SimpleReactLightbox>
   </React.StrictMode>,
   document.getElementById("root"),
 );
