@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/navigation.css";
 import { Link, useLocation } from "react-router-dom";
+import logo from "../img/LLAQTA-LOGO.png";
 
 const Navbar = (props) => {
   const location = useLocation();
@@ -15,7 +16,7 @@ const Navbar = (props) => {
       <div className="container-fluid">
         <div className="navbar-header">
           <a className="navbar-brand" href="#page-top">
-            LLAQTA INGENIEROS
+            <img src={logo} className="logo" alt="Llaqta" />
           </a>{" "}
         </div>
         <button

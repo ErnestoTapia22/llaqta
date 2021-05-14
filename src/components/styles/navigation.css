@@ -39,3 +39,19 @@
 .activeLink {
   width: 100%;
 }
+
+.logo {
+  width: 59px;
+  margin-left: 32px;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+  .logo {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .logo {
+    margin-left: 0px;
+  }
+}

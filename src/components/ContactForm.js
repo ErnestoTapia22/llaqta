@@ -35,7 +35,7 @@ const ContactForm = () => {
                         name="first_name"
                         id="first_name"
                         className="form-control"
-                        placeholder="nombres"
+                        placeholder="Nombres"
                       />
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
