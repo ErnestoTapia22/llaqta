@@ -1,7 +1,7 @@
 import "./styles/Landing.css";
-import minera from "../img/minera-cover.jpg";
-import gas from "../img/gas-cover.jpg";
-import intro from "../img/intro-bg-cover.jpg";
+import minera from "../img/slide-1.jpg";
+import gas from "../img/slide-2.jpg";
+import intro from "../img/slide-3.jpg";
 const Header = (props) => {
   return (
     <header id="header">
@@ -38,29 +38,29 @@ const Header = (props) => {
               <div className="carousel-item active" data-bs-interval="5000">
                 <img src={intro} className="d-block w-100 h-75" alt="..." />
                 <div className="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>
+                  <h5>Gas</h5>
+                  {/* <p>
                     Some representative placeholder content for the first slide.
-                  </p>
+                  </p> */}
                 </div>
               </div>
               <div className="carousel-item" data-bs-interval="5000">
                 <img src={gas} className="d-block w-100 h-75" alt="..." />
                 <div className="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>
+                  <h5>Mineria</h5>
+                  {/* <p>
                     Some representative placeholder content for the second
                     slide.
-                  </p>
+                  </p> */}
                 </div>
               </div>
               <div className="carousel-item" data-bs-interval="5000">
                 <img src={minera} className="d-block w-100 h-75" alt="..." />
                 <div className="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>
+                  <h5>Petróleo</h5>
+                  {/* <p>
                     Some representative placeholder content for the third slide.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

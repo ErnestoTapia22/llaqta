@@ -49,7 +49,7 @@ a {
 }
 
 .post-media img {
-  width: 100%;
+  width: 80%;
 }
 .message-box {
   padding: 20px 0px;
@@ -140,8 +140,8 @@ a {
   margin-bottom: 30px;
 }
 
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
   .mw-1140 {
     max-width: 1140px;
   }
-}
+} */

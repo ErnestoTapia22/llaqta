@@ -25,7 +25,7 @@
 }
 
 .footer {
-  padding: 90px 0 80px !important;
+  padding: 60px 0 50px !important;
   color: #999;
   background: #3b3838;
 }
@@ -191,8 +191,9 @@
   margin-top: 6px;
 }
 
-.footer-distributed .footer-company-name a {
+.footer-distributed .footer-company-name span {
   color: #ffffff;
+  cursor: pointer;
 }
 
 .footer-distributed .footer-company-name a:hover {

@@ -1,7 +1,12 @@
 import React, { Fragment } from "react";
 import "./styles/ContactForm.css";
+import Map from "../components/Map";
 
 const ContactForm = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("for implementing");
+  };
   return (
     <Fragment>
       <div className="all-title-box-contact">
@@ -11,11 +16,6 @@ const ContactForm = () => {
         <div className="container-fulid">
           <div className="section-title text-center">
             <h3>Contáctenos!</h3>
-            <p className="lead">
-              Let us give you more details about the special offer website you
-              want us. Please fill out the form below. <br />
-              We have million of website owners who happy to work with us!
-            </p>
           </div>
 
           <div className="row">
@@ -25,9 +25,8 @@ const ContactForm = () => {
                 <form
                   id="contactform"
                   className=""
-                  action="contact.php"
+                  onSubmit={handleSubmit}
                   name="contactform"
-                  method="post"
                 >
                   <fieldset className="row row-fluid">
                     <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -90,9 +89,7 @@ const ContactForm = () => {
               </div>
             </div>
             <div className="col-xl-6 col-md-12 col-sm-12">
-              <div className="map-box">
-                <div id="custom-places" className="small-map"></div>
-              </div>
+              <div className="map-box">{<Map />}</div>
             </div>
           </div>
         </div>

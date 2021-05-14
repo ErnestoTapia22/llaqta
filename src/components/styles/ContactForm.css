@@ -388,6 +388,7 @@ select.mobile-device {
 
 .map-box {
   margin-left: -15px;
+  height: 100%;
 }
 
 .grd1 {
@@ -417,4 +418,11 @@ select.mobile-device {
 .btn-light:focus {
   border-color: rgba(255, 255, 255, 0.6);
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 1200px) {
+  .map-box {
+    height: 500px;
+    padding-top: 20px;
+  }
 }

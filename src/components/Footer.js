@@ -8,6 +8,7 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 import "./styles/Footer.css";
 
 library.add(faCoffee, faFacebookF, faTwitter, faYoutube, faLinkedinIn);
@@ -24,18 +25,14 @@ const Footer = () => {
             <div className="col-lg-4 col-md-4 col-xs-12">
               <div className="widget clearfix">
                 <div className="widget-title">
-                  <h3>About US</h3>
+                  <h3>¿Por qué elegirnos?</h3>
                 </div>
                 <p>
-                  {" "}
-                  Integer rutrum ligula eu dignissim laoreet. Pellentesque
-                  venenatis nibh sed tellus faucibus bibendum. Sed fermentum est
-                  vitae rhoncus molestie. Cum sociis natoque penatibus et magnis
-                  dis montes.
-                </p>
-                <p>
-                  Sed fermentum est vitae rhoncus molestie. Cum sociis natoque
-                  penatibus et magnis dis montes.
+                  Si buscas garantía en la reconstrucción de elementos o partes
+                  de maquinaria pesada, somos los indicados. Contamos con los
+                  equipos de precisión y el soporte técnico de nuestra área de
+                  Ingeniería dedicados a la constante investigación sobre los
+                  diversos métodos de reconstrucción.
                 </p>
               </div>
             </div>
@@ -43,23 +40,23 @@ const Footer = () => {
             <div className="col-lg-4 col-md-4 col-xs-12">
               <div className="widget clearfix">
                 <div className="widget-title">
-                  <h3>Information Link</h3>
+                  <h3>Links de información</h3>
                 </div>
                 <ul className="footer-links">
                   <li>
-                    <a href="#">Inicio</a>
+                    <Link to="/">Inicio</Link>
                   </li>
                   <li>
-                    <a href="#">Quienes Somos</a>
+                    <Link to="/aboutus">Quienes Somos</Link>
                   </li>
                   <li>
-                    <a href="#">Servicios</a>
+                    <Link to="/services">Servicios</Link>
                   </li>
                   <li>
-                    <a href="#">Galeria</a>
+                    <Link to="/gallery">Galería</Link>
                   </li>
                   <li>
-                    <a href="#">Contacto</a>
+                    <Link to="/contact">Contacto</Link>
                   </li>
                 </ul>
               </div>
@@ -68,20 +65,28 @@ const Footer = () => {
             <div className="col-lg-4 col-md-4 col-xs-12">
               <div className="widget clearfix">
                 <div className="widget-title">
-                  <h3>Contact Details</h3>
+                  <h3>Detalles de contacto</h3>
                 </div>
 
                 <ul className="footer-links">
                   <li>
-                    <a href="mailto:#">info@yoursite.com</a>
+                    <span>ventas@llaqta.com.pe</span>
                   </li>
                   <li>
-                    <a href="#">www.yoursite.com</a>
+                    <a
+                      href="https://www.llaqta.com.pe"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      www.llaqta.com.pe
+                    </a>
                   </li>
                   <li>
-                    PO Box 16122 Collins Street West Victoria 8007 Australia
+                    Barrio Manantiales S/N Callhuahuacho <br />
+                    Cotabambas - Apurimac
                   </li>
-                  <li>+61 3 8376 6284</li>
+                  <li>01-3041000</li>
+                  <li>+51982960296</li>
                 </ul>
               </div>
             </div>
@@ -93,29 +98,45 @@ const Footer = () => {
           <div className="footer-distributed">
             <div className="footer-left">
               <p className="footer-company-name">
-                All Rights Reserved. &copy; {getYear()} <a href="#">LLAQTA</a>
+                All Rights Reserved. &copy; {getYear()} <span>LLAQTA</span>
               </p>
             </div>
 
             <div className="footer-right">
               <ul className="footer-links-soi">
                 <li>
-                  <a href="#">
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FontAwesomeIcon icon={faFacebookF} />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a
+                    href="https://www.twitter.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FontAwesomeIcon icon={faTwitter} />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a
+                    href="https://www.youtube.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FontAwesomeIcon icon={faYoutube} />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FontAwesomeIcon icon={faLinkedinIn} />
                   </a>
                 </li>

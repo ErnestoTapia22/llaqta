@@ -36,3 +36,6 @@
 #menu.custom-navbar .navbar-nav > li > a:hover .lineAnimation {
   width: 100%;
 }
+.activeLink {
+  width: 100%;
+}

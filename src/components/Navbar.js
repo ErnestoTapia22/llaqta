@@ -1,8 +1,12 @@
 import React from "react";
 import "./styles/navigation.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = (props) => {
+  const location = useLocation();
+  const { pathname } = location;
+  const splitLocation = pathname.split("/");
+
   return (
     <nav
       id="menu"
@@ -11,7 +15,7 @@ const Navbar = (props) => {
       <div className="container-fluid">
         <div className="navbar-header">
           <a className="navbar-brand" href="#page-top">
-            LLAQTA
+            LLAQTA INGENIEROS
           </a>{" "}
         </div>
         <button
@@ -29,21 +33,39 @@ const Navbar = (props) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link to="/" className="nav-link">
                 Inicio
-                <div className="lineAnimation" />
+                <div
+                  className={
+                    splitLocation[1] === ""
+                      ? "lineAnimation activeLink"
+                      : "lineAnimation"
+                  }
+                />
               </Link>
             </li>
             <li>
-              <a href="#about" className="nav-link">
+              <Link className="nav-link" to="/aboutus">
                 Quienes Somos
-                <div className="lineAnimation" />
-              </a>
+                <div
+                  className={
+                    splitLocation[1] === "aboutus"
+                      ? "lineAnimation activeLink"
+                      : "lineAnimation"
+                  }
+                />
+              </Link>
             </li>
             <li>
               <Link className="nav-link" to="/services">
                 Servicios
-                <div className="lineAnimation" />
+                <div
+                  className={
+                    splitLocation[1] === "services"
+                      ? "lineAnimation activeLink"
+                      : "lineAnimation"
+                  }
+                />
               </Link>
 
               {/* <a href="#services" className="nav-link">
@@ -54,13 +76,25 @@ const Navbar = (props) => {
             <li>
               <Link className="nav-link" to="/gallery">
                 Galeria
-                <div className="lineAnimation" />
+                <div
+                  className={
+                    splitLocation[1] === "gallery"
+                      ? "lineAnimation activeLink"
+                      : "lineAnimation"
+                  }
+                />
               </Link>
             </li>
             <li>
               <Link className="nav-link" to="/contact">
                 Contacto
-                <div className="lineAnimation" />
+                <div
+                  className={
+                    splitLocation[1] === "contact"
+                      ? "lineAnimation activeLink"
+                      : "lineAnimation"
+                  }
+                />
               </Link>
             </li>
           </ul>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -51,34 +51,34 @@ const BrandsFooter = () => {
             ]}
           >
             <div className="col-md-2 col-sm-2 col-xs-6">
-              <a href="#">
+              <div>
                 <img src={logo_01} alt="" className="img-repsonsive" />
-              </a>
+              </div>
             </div>
             <div className="col-md-2 col-sm-2 col-xs-6">
-              <a href="#">
+              <div>
                 <img src={logo_02} alt="" className="img-repsonsive" />
-              </a>
+              </div>
             </div>
             <div className="col-md-2 col-sm-2 col-xs-6">
-              <a href="#">
+              <div>
                 <img src={logo_03} alt="" className="img-repsonsive" />
-              </a>
+              </div>
             </div>
             <div className="col-md-2 col-sm-2 col-xs-6">
-              <a href="#">
+              <div>
                 <img src={logo_04} alt="" className="img-repsonsive" />
-              </a>
+              </div>
             </div>
             <div className="col-md-2 col-sm-2 col-xs-6">
-              <a href="#">
+              <div>
                 <img src={logo_05} alt="" className="img-repsonsive" />
-              </a>
+              </div>
             </div>
             <div className="col-md-2 col-sm-2 col-xs-6">
-              <a href="#">
+              <div>
                 <img src={logo_06} alt="" className="img-repsonsive" />
-              </a>
+              </div>
             </div>
           </Slider>
         </div>

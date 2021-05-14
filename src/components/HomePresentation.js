@@ -1,20 +1,27 @@
 import React from "react";
 import "./styles/HomePresentation.css";
 import { Fade } from "react-awesome-reveal";
-import about2 from "../img/about_02.jpg";
-import about3 from "../img/about_03.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faQuoteRight, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 
+import about2 from "../img/home-1.jpg";
+import about3 from "../img/home-2.jpg";
+
+library.add(faQuoteRight, faQuoteLeft);
 const HomePresentation = () => {
   return (
     <div id="overviews" className="section lb">
       <div className="container mw-1140">
         <div className="section-title row text-center">
           <div className="col-md-8 offset-md-2">
-            <h3>About</h3>
+            <h3>¿Por qué elegirnos?</h3>
             <p className="lead">
-              Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean
-              sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-              ipsum, nec sagittis sem!
+              Si buscas garantía en la reconstrucción de elementos o partes de
+              maquinaria pesada, somos los indicados. Contamos con los equipos
+              de precisión y el soporte técnico de nuestra área de Ingeniería
+              dedicados a la constante investigación sobre los diversos métodos
+              de reconstrucción.
             </p>
           </div>
         </div>
@@ -22,25 +29,24 @@ const HomePresentation = () => {
         <div className="row align-items-center">
           <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
             <div className="message-box">
-              <h4>2018 BEST WEB HOSTING COMPANY</h4>
-              <h2>Awards Winner Support Center</h2>
+              {/* <h4>Nuestros Lemas</h4> */}
+              <h2>Nuestros Lemas</h2>
               <p>
-                Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis
-                vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus
-                dignissim.
+                <FontAwesomeIcon icon={faQuoteLeft} color="#538234" /> Somos
+                Profesionales al servicio de la industria.{" "}
+                <FontAwesomeIcon icon={faQuoteRight} color="#538234" />
               </p>
 
               <p>
                 {" "}
-                Integer rutrum ligula eu dignissim laoreet. Pellentesque
-                venenatis nibh sed tellus faucibus bibendum. Sed fermentum est
-                vitae rhoncus molestie. Cum sociis natoque penatibus et magnis
-                montes, nascetur ridiculus mus. Sed vitae rutrum neque.{" "}
+                <FontAwesomeIcon icon={faQuoteLeft} color="#538234" /> Con
+                seguridad, responsabilidad y puntualidad en nuestro trabajo.{" "}
+                <FontAwesomeIcon icon={faQuoteRight} color="#538234" />{" "}
               </p>
 
-              <a href="#" className="hover-btn-new">
+              {/* <a href="#" className="hover-btn-new">
                 <span>Learn More</span>
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -52,7 +58,11 @@ const HomePresentation = () => {
                 delay={500}
                 duration={1500}
               >
-                <img src={about2} alt="" className="img-fluid img-rounded" />
+                <img
+                  src={about2}
+                  alt=""
+                  className="img-fluid img-rounded shadow-img"
+                />
               </Fade>
             </div>
           </div>
@@ -61,33 +71,38 @@ const HomePresentation = () => {
           <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
             <div className="post-media">
               <Fade triggerOnce={true} direction="up" duration={1500}>
-                <img src={about3} alt="" className="img-fluid " />
+                <img src={about3} alt="" className="img-fluid shadow-img" />
               </Fade>
             </div>
           </div>
 
           <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
             <div className="message-box">
-              <h2>The standard Lorem Ipsum passage, used since the 1500s</h2>
+              <h2>Mensaje de nuestro gerente general</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <FontAwesomeIcon icon={faQuoteLeft} color="#538234" /> Cuento
+                con más de 10 años de experiencia en el sector minero y
+                metalmecánico, y uno de los grandes problemas en la producción
+                minera es el retraso generado por reparaciones no programadas de
+                maquinaria pesada. Esto es debido a que la mayoría de estos
+                equipos y mantenimiento de estos se hacen en la ciudad de Lima.
+                LLAQTA INGENIEROS SAC, se ha creado con el objetivo de ser un
+                aliado de las mineras que pueda resolver problemas en tiempo de
+                reparación, estamos ubicados estrategicamente para ser la
+                solución a sus paradas de emergencia y así disminuir el retraso
+                generado.{" "}
+                <FontAwesomeIcon icon={faQuoteRight} color="#538234" />
               </p>
 
-              <p>
+              {/* <p>
                 {" "}
                 Integer rutrum ligula eu dignissim laoreet. Pellentesque
                 venenatis nibh sed tellus faucibus bibendum.
-              </p>
+              </p> */}
 
-              <a href="#" className="hover-btn-new">
+              {/* <a href="#" className="hover-btn-new">
                 <span>Learn More</span>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
